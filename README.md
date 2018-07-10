@@ -7,7 +7,7 @@ In addition you should adhere to the following conditions:
 
 1) It must be easy to run using libraries & tools commonly available on a development machine. 
 1) Clear instructions for how to build and run the application should be included within the code, e.g. `README.md`
-1) The code must be your own work. If you have a strong case to use small code snippet of someone else's e.g. a
+1) The code must be your own work. If you have a strong case to use a small code snippet of someone else's e.g. a
 boilerplate function, it must be clearly commented and attributed to the original author.
 1) The flight data cannot be changed, and must be loaded from the CSV file, so it can easily be replaced with another file.
 
