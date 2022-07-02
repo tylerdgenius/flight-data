@@ -1,4 +1,4 @@
-Departure Time,Destination,Destination Airport IATA,Flight No,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+Departure Time,Destination,IATA,Flight No,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
 09:00,Antigua,ANU,VS033,,,x,,,,
 10:00,Antigua,ANU,VS033,,,,,x,,x
 11:05,Barbados,BGI,VS029,x,x,x,x,x,x,x
@@ -11,7 +11,7 @@ Departure Time,Destination,Destination Airport IATA,Flight No,Sunday,Monday,Tues
 10:25,Las Vegas,LAS,VS043,,,,,x,,
 10:35,Las Vegas,LAS,VS043,,x,x,x,,,
 15:35,Las Vegas,LAS,VS044,x,x,x,x,x,x,x
-12:25 ,Montego Bay,MBJ,VS065,,,,x,,,
+12:25,Montego Bay,MBJ,VS065,,,,x,,,
 12:40,Montego Bay,MBJ,VS065,x,,,,,,
 10:10,Orlando,MCO,VS049,x,,,,,,
 10:15,Orlando,MCO,VS027,,,,x,,,
