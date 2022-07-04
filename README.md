@@ -1,8 +1,10 @@
 # Virgin Atlantic ~ Flight Information Display
 
-Here's an example project for Virgin Atlantic Holidays, in a way that best represents what we are looking for in candidates for 
-this role. Please spend no more than 2 hours improving this application. What you improve is up to you. Perhaps it needs more tests, 
-or additional functionality. Let your imagination go wild and show us your best side!
+Here is an example of a flight times application for Virgin Atlantic. This project represents what we're looking for in 
+a candidate and our current technology choices.
+
+Please spend up to 2 hours improving this application. What you improve is up to you: Perhaps it needs more tests,
+additional functionality, or some bug fixing.
 
 ## Rules
 
