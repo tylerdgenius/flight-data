@@ -23,7 +23,7 @@ that day, displayed in chronological order -- a Flight Information Display.
 Please **create and commit your code into a public Github repository** and supply the link to the recruiter for review.  Your code should compile and run in one step.
 
 ## Supporting Data
-The [flight data](back-end-test/src/main/resources/flights.csv) is a simple comma-separated file containing the following:
+The [flight data](./src/main/resources/flights.csv) is a simple comma-separated file containing the following:
 
 | Departure Time | Destination | Destination Airport IATA | Flight No | Sun | Mon | Tue | Wed | Thu | Fri | Sat
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
