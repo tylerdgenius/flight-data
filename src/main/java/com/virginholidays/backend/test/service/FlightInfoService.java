@@ -1,6 +1,5 @@
 package com.virginholidays.backend.test.service;
 
-import java.time.DayOfWeek;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletionStage;
@@ -20,5 +19,5 @@ public interface FlightInfoService {
      * @param outboundDate the outbound departure date
      * @return optional flights.
      */
-    CompletionStage<Optional<List<Flight>>> findFlightByDayOfWeek(DayOfWeek dayOfWeek);
+    CompletionStage<Optional<List<Flight>>> findFlightByDate(String date);
 }
