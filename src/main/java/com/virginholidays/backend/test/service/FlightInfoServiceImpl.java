@@ -1,12 +1,15 @@
 package com.virginholidays.backend.test.service;
 
-import com.virginholidays.backend.test.api.Flight;
-import com.virginholidays.backend.test.repository.FlightInfoRepository;
-import java.time.LocalDate;
+import java.time.DayOfWeek;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletionStage;
+import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Service;
+
+import com.virginholidays.backend.test.api.Flight;
+import com.virginholidays.backend.test.repository.FlightInfoRepository;
 
 /**
  * The service implementation of FlightInfoService
@@ -27,10 +30,22 @@ public class FlightInfoServiceImpl implements FlightInfoService {
         this.flightInfoRepository = flightInfoRepository;
     }
 
+    /**
+     * Finds flights for any date by filtering the flights based on the day of the
+     * week
+     * 
+     * @param dayOfWeek the day of the week to filter the flights for
+     */
     @Override
-    public CompletionStage<Optional<List<Flight>>> findFlightByDate(LocalDate outboundDate) {
+    public CompletionStage<Optional<List<Flight>>> findFlightByDayOfWeek(
+            DayOfWeek dayOfWeek) {
 
-        // FIXME - applicant to complete
-        return flightInfoRepository.findAll();
+        System.out.println(dayOfWeek);
+
+        return flightInfoRepository.findAll()
+                .thenApply(optionalFlights -> optionalFlights.map(flights -> flights.stream()
+                        .filter(flight -> flight.days().contains(
+                                dayOfWeek))
+                        .collect(Collectors.toList())));
     }
 }

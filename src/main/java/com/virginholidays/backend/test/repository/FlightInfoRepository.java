@@ -1,9 +1,10 @@
 package com.virginholidays.backend.test.repository;
 
-import com.virginholidays.backend.test.api.Flight;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletionStage;
+
+import com.virginholidays.backend.test.api.Flight;
 
 /**
  * The FlightInfoRepository

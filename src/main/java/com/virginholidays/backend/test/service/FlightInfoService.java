@@ -1,10 +1,11 @@
 package com.virginholidays.backend.test.service;
 
-import com.virginholidays.backend.test.api.Flight;
-import java.time.LocalDate;
+import java.time.DayOfWeek;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletionStage;
+
+import com.virginholidays.backend.test.api.Flight;
 
 /**
  * The FlightInfoService
@@ -19,5 +20,5 @@ public interface FlightInfoService {
      * @param outboundDate the outbound departure date
      * @return optional flights.
      */
-    CompletionStage<Optional<List<Flight>>> findFlightByDate(LocalDate outboundDate);
+    CompletionStage<Optional<List<Flight>>> findFlightByDayOfWeek(DayOfWeek dayOfWeek);
 }
